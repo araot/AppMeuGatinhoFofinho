@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colabore com o App - App Meu Gatinho Fofinho</title>
+    <meta name="autor" content="Arão Miguel Tchipunge">
+    <meta name="assunto" content="Um app para quem ama gatos e deseja aprender mais sobre eles.">
+    <link rel="stylesheet" href="css/sobre4.css">
+    <link rel="icon" href="img/icon.jfif">
+    <!-- Adicionar link para fontes e ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <h1>App Meu Gatinho Fofinho 😺</i></h1>
+        <nav class="navbar">
+            <div class="menu">
+                <span class="menu-item">Menu</span>
+                <div class="dropdown-content">
+                     <a href="index.html" title="Home">Página Inicial</a>
+                    <a href="Fotos_de_Gatos.html" title="Fotos de Gatos" target="_blank">Fotos de Gatos</a>
+                    <a href="videos_de_gatos.html" title="videos_de_gatos" target="_blank">Videos de gatos </a>
+                    <a href="Fatos_Sobre_Gatos.html" title="Fatos Sobre Gatos" target="_blank">Factos Sobre Gatos</a>
+                    <a href="Formulário_Felino.html" title="Formulário Felino" target="_blank">Formulário Felino</a>
+                    <a href="Colabore.html" target="_self">Colabore</a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <section class="colabore-section">
+        <h2>Colabore com o App</h2>
+        <p>Ajude-nos a entender mais sobre esses bichinhos adoráveis respondendo nosso questionário!</p>
+        <form action="submit_s.php" method="post">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" >
+
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email">
+
+            <fieldset>
+                <legend>Selecione o(s) que seu gato gosta:</legend>
+                <input type="checkbox" id="catnip" name="preferencias[]" value="Catnip">
+                <label for="catnip">Catnip (ervas para gatos)</label><br>
+                <input type="checkbox" id="amassar_pao" name="preferencias[]" value="Amassar pãozinho">
+                <label for="amassar_pao">Amassar pãozinho</label><br>
+                <input type="checkbox" id="cheirar_azeitonas" name="preferencias[]" value="Cheirar azeitonas">
+                <label for="cheirar_azeitonas">Cheirar azeitonas</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecione os comportamentos do seu gato:</legend>
+                <input type="checkbox" id="arranhar_moveis" name="comportamentos[]" value="Arranhar móveis">
+                <label for="arranhar_moveis">Arranhar móveis</label><br>
+                <input type="checkbox" id="ronronar" name="comportamentos[]" value="Ronronar">
+                <label for="ronronar">Ronronar</label><br>
+                <input type="checkbox" id="esconder_se" name="comportamentos[]" value="Esconder-se">
+                <label for="esconder_se">Esconder-se</label><br>
+            </fieldset>
+
+            <label for="alimento_preferido">Alimento preferido do seu gato:</label>
+            <input type="text" id="alimento_preferido" name="alimento_preferido">
+
+            <label for="comentarios">Comentários:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit" onclick="">Enviar</button>
+        </form>
+        
+    </section>
+
+    <hr>
+    <p><a href="#top">Voltar ao topo</a></p>
+
+    <footer>
+        <p>&copy; 2025 App Meu Gatinho Fofinho</p>
+    </footer>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

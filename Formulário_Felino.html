@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Felino - App Meu Gatinho Fofinho</title>
+    <meta name="autor" content="Arão Miguel Tchipunge">
+    <meta name="assunto" content="Um app para quem ama gatos e deseja aprender mais sobre eles.">
+    <link rel="stylesheet" href="css/sobre3.css">
+    <link rel="icon" href="img/icon.jfif">
+    <!-- Adicionar link para fontes e ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <h1>App Meu Gatinho Fofinho 😺</i></h1>
+        <nav class="navbar">
+            <div class="menu">
+                <span class="menu-item">Menu</span>
+                <div class="dropdown-content">
+                   <a href="index.html" title="Home">Página Inicial</a>
+                    <a href="Fotos_de_Gatos.html" title="Fotos de Gatos" target="_blank">Fotos de Gatos</a>
+                    <a href="videos_de_gatos.html" title="videos_de_gatos" target="_blank">Videos de gatos </a>
+                    <a href="Fatos_Sobre_Gatos.html" title="Fatos Sobre Gatos" target="_blank">Factos Sobre Gatos</a>
+                    <a href="Formulário_Felino.html" title="Formulário Felino" target="_self">Formulário Felino</a>
+                    <a href="Colabore.html" target="_blank">Colabore</a> 
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <section class="form-section" >
+        <h2>Formulário Felino</h2>
+        <p>Preencha as informações abaixo sobre o seu gatinho para participar da nossa galeria felina!</p>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data" onsubmit="validarFormulario(event)">
+            <label for="nome">Nome do Gato:</label>
+            <input type="text" id="nome" name="nome" >
+
+            <label for="idade">Idade do Gato:</label>
+            <input type="number" id="idade" name="idade" min="0">
+
+            <label for="raca">Raça do Gato:</label>
+            <input type="text" id="raca" name="raca" >
+
+            <label for="comida">Comida Favorita:</label>
+            <input type="text" id="comida" name="comida" >
+
+            <label for="foto">Foto do Gato:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <label for="descricao">Descrição do Gato:</label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <hr>
+    <p><a href="#top">Voltar ao topo</a></p>
+
+    <footer>
+        <p>&copy; 2025 App Meu Gatinho Fofinho</p>
+    </footer>
+   <script src="js/script2.js"></script>
+</body>
+
+</html>
